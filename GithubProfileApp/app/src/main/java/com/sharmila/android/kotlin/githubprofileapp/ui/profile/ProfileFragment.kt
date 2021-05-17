@@ -25,7 +25,7 @@ class ProfileFragment: Fragment(),ProfileContract.View  {
     }
 
     companion object {
-        val TAG: String = "ProfileFragment"
+        const val TAG: String = "ProfileFragment"
     }
 
 
@@ -99,7 +99,4 @@ class ProfileFragment: Fragment(),ProfileContract.View  {
     }
 
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-    }
 }
