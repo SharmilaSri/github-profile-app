@@ -9,6 +9,7 @@ import dagger.Provides
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
+import utils.Constants
 
 private var instance: ApolloClient? = null
 
@@ -28,7 +29,7 @@ fun apolloClient(context: Context): ApolloClient {
         .build()
 
     instance = ApolloClient.builder()
-        .serverUrl("https://api.github.com/graphql")
+        .serverUrl(Constants.BASE_URL)
         .normalizedCache(cacheFactory)
         .okHttpClient(okHttpClient)
         .build()
