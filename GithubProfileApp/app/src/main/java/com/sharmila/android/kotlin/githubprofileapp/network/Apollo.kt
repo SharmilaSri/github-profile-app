@@ -5,11 +5,10 @@ import com.apollographql.apollo.ApolloClient
 import com.apollographql.apollo.cache.normalized.lru.EvictionPolicy
 import com.apollographql.apollo.cache.normalized.lru.LruNormalizedCacheFactory
 
-import dagger.Provides
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
-import utils.Constants
+import com.sharmila.android.kotlin.githubprofileapp.utils.Constants
 
 private var instance: ApolloClient? = null
 

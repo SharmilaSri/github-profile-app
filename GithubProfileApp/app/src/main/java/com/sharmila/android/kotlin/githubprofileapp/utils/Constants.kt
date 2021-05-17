@@ -1,4 +1,4 @@
-package utils
+package com.sharmila.android.kotlin.githubprofileapp.utils
 
 class Constants {
     companion object {

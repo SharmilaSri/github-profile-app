@@ -21,4 +21,9 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.sharmila.android.kotlin.githubprofileapp", appContext.packageName)
     }
+
+    @Test
+    fun testBaseUrl() {
+        assertEquals("https://api.github.com/graphql", com.sharmila.android.kotlin.githubprofileapp.utils.Constants.BASE_URL)
+    }
 }
